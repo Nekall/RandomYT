@@ -1,7 +1,4 @@
-console.log("HomePage random detected")
-console.log("Actual URL :", window.location.toString());
-
-if(window.location.toString() === "https://www.youtube.com/"){
+if(window.location.href.indexOf("https://www.youtube.com/") > -1){
   let arrThumbnail = document.querySelectorAll("#thumbnail");
   let randomInt = Math.floor(Math.random()*arrThumbnail.length);
   let view = document.querySelector("#container.style-scope.ytd-masthead");
@@ -25,6 +22,7 @@ if(window.location.toString() === "https://www.youtube.com/"){
 
   let loadBtn = document.getElementById("load-btn");
   let randomBtn = document.getElementById("random-btn");
+  let randomStringBtn = document.getElementById("random-stg-btn");
 
   loadBtn.addEventListener("click", function(){
     scrollPage();
@@ -35,6 +33,25 @@ if(window.location.toString() === "https://www.youtube.com/"){
     arrThumbnail = document.querySelectorAll("#thumbnail");
     randomInt = Math.floor(Math.random()*arrThumbnail.length);
     window.open(`${arrThumbnail[randomInt].href}`, '_blank');
+  });
+
+//<button style="border: solid 1px #202020;padding:8px;background-color:#383838;color:white;cursor:pointer;margin:10px;" id="random-stg-btn">Random letters</button>
+  randomStringBtn.addEventListener("click", function(){
+    /*
+    console.log("randomstring");
+    //generate random string
+    const chars = "abcdefghijklmnopqrstuvwxyz";
+    const length = 4;
+    let randomStr = "";
+
+    for (let i = 0; i < length; i++){
+      const randomNum = Math.floor(Math.random() * chars.length);
+      randomStr += chars[randomNum];
+    }
+    console.log(randomStr);
+    document.querySelectorAll("#search input")[0].value = randomStr;
+    document.getElementById("search-icon-legacy").click();
+    */
   });
 
 }else{
