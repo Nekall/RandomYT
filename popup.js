@@ -1,8 +1,15 @@
-let btn = document.getElementById("enable-btn");
+let enableBtn = document.getElementById("enable-btn");
+let disableBtn = document.getElementById("disable-btn");
 
-btn.addEventListener("click", function() {
+enableBtn.addEventListener("click", function() {
   browser.tabs.executeScript(null,{
-    file: "content_script/main.js"
+    file: "content_script/enable.js"
+  });
+});
+
+disableBtn.addEventListener("click", function() {
+  browser.tabs.executeScript(null,{
+    file: "content_script/disable.js"
   });
 });
 

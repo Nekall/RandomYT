@@ -1,5 +1,6 @@
 console.log("HomePage random detected")
 console.log("Actual URL :", window.location.toString());
+var save = document.querySelector("#container.style-scope.ytd-masthead");
 
 if(window.location.toString() === "https://www.youtube.com/"){
   let arrThumbnail = document.querySelectorAll("#thumbnail");
