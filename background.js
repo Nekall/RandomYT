@@ -1,3 +1,1 @@
-chrome.browserAction.onClicked.addListener(function(tab) {
-   chrome.tabs.executeScript(null, {file: "randomSelection.js"});
-});
+//Hey guys <3

@@ -1,3 +1,36 @@
 *{
   font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  width: 120px;
+}
+
+#enable-btn, #disable-btn{
+  border: solid 1px #000000;
+  padding: 4px;
+  margin: 4px;
+  cursor: pointer;
+}
+
+#enable-btn:hover, #disable-btn:hover{
+  border: solid 1px #afafaf;
+}
+
+.title{
+  background-color: #202020;
+  color: #ffffff;
+  width: 100%;
+}
+
+h1{
+  font-size: 15px;
+  padding: 10px 10px 10px 10px;
+}
+
+img{
+  padding: 10px;
 }
