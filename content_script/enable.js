@@ -7,7 +7,7 @@ if(window.location.href.indexOf("https://www.youtube.com/") > -1){
   view.innerHTML +=`
   <div id="random-app-ext" style="user-select: none;position:absolute;top:0;left:0;width:100%;height:56px;z-index:2147483638;background-color:#202020;border-bottom:solid 2px #888888;color:white;font-size:20px;display:inline-flex;align-items:center;">
     <div style="margin:0 10px;font-weight: bold;font-size: 20px;margin-right: 10px;">RandomYT</div>
-    <img style="margin-right: 50px;" src="https://raw.githubusercontent.com/Nekall/RandomYT/main/icons/icon32.png">
+    <img style="filter: invert(100%) sepia(0%) saturate(1351%) hue-rotate(153deg) brightness(117%) contrast(100%);margin-right: 50px;" src="https://raw.githubusercontent.com/Nekall/RandomYT/main/icons/icon32.png">
     <div style="width:200px;font-size: 15px;" id="num-videos">${arrThumbnail.length} videos found</div>
     <input type="range" id="select-load-size" name="loadvids" min="25" max="200" value="25" step="25">
     <button style="min-width: 119px;border: solid 1px #202020;padding:8px;background-color:#383838;color:white;cursor:pointer;margin:10px;" id="load-btn">Load ~${loadNumber} videos</button>
